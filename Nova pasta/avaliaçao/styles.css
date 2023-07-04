@@ -1,0 +1,27 @@
+.rating {
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  float: right;
+  color: #cbe7eb;
+}
+
+.rating label:before {
+  content: "\2605";
+  font-size: 2rem;
+  float: right;
+}
+
+.rating input:checked ~ label {
+  color:#0022D7;
+}
+
+.rating label:hover,
+.rating label:hover ~ label {
+  color: #6099d1 ;
+}
